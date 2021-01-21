@@ -1,0 +1,153 @@
+/* BACKGROUND IMAGE AND BACKGROUND HEIGHT TO AVOID SCROLL BAR */
+
+
+/* https://www.cssstickyfooter.com/style.css - the navbar was stuck to bottom to remove any photo problems - taken from this site */
+html, body {
+  height: 100%;
+}
+
+.wrap {
+  min-height: 100%;
+}
+
+.main {
+  overflow:auto;
+  padding-bottom: 50px; /* must be same height as the footer */
+}
+
+.navbar {
+  position: relative;
+	margin-top: -50px; /* negative value of footer height */
+	height: 50px;
+  clear:both;
+}  
+
+
+body {
+  /* BACKGROUND IMAGE ILLUSTRATED FOR WEBSITE PURPOSES */
+  background: url("background-ruth-images/12.png") no-repeat fixed center; 
+  overflow: auto
+}
+
+/* TO FIX ABOUT IMAGE IN PLACE */
+.about-image {
+  max-height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* HEADERS AND TEXT STYLE */
+h1{
+  font-family: 'Spectral', sans-serif;
+  font-weight:700; 
+}
+
+@media only screen and (max-width: 480px) {
+  .text-main {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+      .text-main {
+        font-size: 4em;
+      }
+  }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .text-main{
+      font-size: 6.5em;
+    }
+
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  /* font-size: 1.5em; */
+  color:black;
+}
+
+p, figcaption {
+  color: black;
+  /* font-size: 1em; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+  h2,p,figcaption {
+    font-size: 0.8em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h2,p,figcaption{
+    font-size: 1em;
+}
+
+}
+
+.form-text {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+
+/* CAROUSEL IMAGE TO BE IN CENTER */
+
+.carousel-inner img{
+  margin :auto;
+}
+
+/* CREATING A BOX SHADOW UNDERNEATH THE HEADER 1 OF ALL PAGES EXCEPT INDEX.HTML */
+
+.main-content {
+  box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.3);
+}
+
+/* CARD STYLE - 3D EFFECT WITH SHADOW AND TRANSPARENT BACKGROUND TO HAVE SOME OF THE BACKGROUND IMAGE TO SHOW THROUGH CARD */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,.5);
+  padding: 20px;
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem;
+  /* background-color: rgba(0,0,0,0.2); */
+}
+
+
+@media only screen and (min-width: 768px) {
+  .zoom {
+    transition: transform .8s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.4); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+}
+
+
+nav li > a {
+  text-transform: uppercase;
+}
+
+nav li > a:hover {
+  background-color: rgba(255,255,255,.15);
+}
+
+.tab-active {
+  font-weight: 700;
+}
+
+/* W3 schools and bootstrap 5 */
+.toast {
+  position: fixed;
+  bottom: 4.8em;
+}
