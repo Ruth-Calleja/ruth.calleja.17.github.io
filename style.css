@@ -1,7 +1,7 @@
-/* BACKGROUND IMAGE AND BACKGROUND HEIGHT TO AVOID SCROLL BAR */
+/* BACKGROUND IMAGE AND BACKGROUND HEIGHT TO AVOID SCROLL BAR WHEN FULL SCREEN*/
 
 
-/* https://www.cssstickyfooter.com/style.css - the navbar was stuck to bottom to remove any photo problems - taken from this site */
+/* https://www.cssstickyfooter.com/style.css - the navbar was stuck to bottom to remove any photo problems - taken from this site. */
 html, body {
   height: 100%;
 }
@@ -15,12 +15,12 @@ html, body {
   padding-bottom: 50px; /* must be same height as the footer */
 }
 
-.navbar {
+.navbar-bottom {
   position: relative;
 	margin-top: -50px; /* negative value of footer height */
 	height: 50px;
   clear:both;
-}  
+}    
 
 
 body {
@@ -121,6 +121,8 @@ p, figcaption {
   /* background-color: rgba(0,0,0,0.2); */
 }
 
+/* ZOOM IN ONLY ON 768PX OR LARGER SCREENs */
+
 
 @media only screen and (min-width: 768px) {
   .zoom {
@@ -133,6 +135,7 @@ p, figcaption {
 
 }
 
+/* STYLING OF NAVBAR */
 
 nav li > a {
   text-transform: uppercase;
@@ -146,8 +149,9 @@ nav li > a:hover {
   font-weight: 700;
 }
 
-/* W3 schools and bootstrap 5 */
+/* TOAST W3 schools and bootstrap 5 */
 .toast {
   position: fixed;
   bottom: 4.8em;
 }
+
